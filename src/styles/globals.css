@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.header {
+  background: rgba(216, 222, 252, 0.10);
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(100px);
+}
+
+.nav-links {
+  border-radius: 296px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background: rgba(47, 135, 164, 0.04);
+  backdrop-filter: blur(100px);
+}
+
+.banner-section {
+  height: calc(100vh - 4rem);
+  background: var(--blue-grdient, linear-gradient(110deg, #89D3EB 1.11%, #2F87A4 45.11%));
+}
+
+.banner-bold-text-bg {
+  background: linear-gradient(356deg, #51BF68 -13.54%, rgba(81, 191, 104, 0.00) 68.11%);
+}
+
+.bg-gradient-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-gradient-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #88d2ea, #2f87a4);
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.bg-gradient-container>div {
+  position: relative;
+  z-index: 1;
+}
+
+#stats .stats-item-left:not(:last-child)::after {
+  content: "";
+  @apply bg-primary/[.2] absolute top-0 right-0 bottom-0 w-[1px];
+  transform: skew(20deg);
+  transform-origin: top right;
+}
+
+#stats .stats-item-right:not(:last-child)::after {
+  content: "";
+  @apply bg-primary/[.2] absolute top-0 right-0 bottom-0 w-[1px];
+  transform: skew(-20deg);
+  transform-origin: top right;
+}
+
+.testimonial {
+  border-radius: 500px;
+  border: 1px solid #E9EBF8;
+  background: #FFF;
+  box-shadow: 0px 4px 20px 0px rgba(0, 21, 121, 0.10);
+}
