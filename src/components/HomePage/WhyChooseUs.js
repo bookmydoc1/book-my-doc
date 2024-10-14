@@ -25,7 +25,7 @@ const WhyChooseUs = ({ title, description }) => {
     return (
         <ContainerSection>
             <SectionHeader title={title} description={description} />
-            <div className='flex'>
+            <div className='flex flex-col md:flex-row gap-4 md:gap-0'>
                 <div className='flex-1'>
                     <img src="/images/doctor.png" alt="image" />
                 </div>

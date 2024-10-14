@@ -27,7 +27,7 @@ const Button = ({
 
   const sizeStyles = {
     small: "text-sm px-3 py-1",
-    medium: "text-md px-4 py-2",
+    medium: "text-sm md:text-md px-4 py-2",
     large: "text-lg px-5 py-3",
   };
 

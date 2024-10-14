@@ -10,7 +10,7 @@ const Testimonial = ({ title }) => {
 
     const CustomLeftArrow = ({ onClick }) => (
         <button
-            className="absolute top-[50%] -translate-y-[50%] border text-secondary hover:text-white border-secondary hover:border-primary h-10 w-10 flex items-center justify-center bg-gray-800 hover:bg-primary/[.8] rounded-full transition-all ease-in-out duration-300"
+            className="lg:absolute top-[50%] -translate-y-[50%] border text-secondary hover:text-white border-secondary hover:border-primary h-10 w-10 flex items-center justify-center bg-gray-800 hover:bg-primary/[.8] rounded-full transition-all ease-in-out duration-300"
             onClick={onClick}
         >
             <IoIosArrowBack />
@@ -19,7 +19,7 @@ const Testimonial = ({ title }) => {
 
     const CustomRightArrow = ({ onClick }) => (
         <button
-            className="absolute top-[50%] -translate-y-[50%] right-0 border text-secondary hover:text-white border-secondary hover:border-primary h-10 w-10 flex items-center justify-center bg-gray-800 hover:bg-primary/[.8] rounded-full transition-all ease-in-out duration-300"
+            className="lg:absolute top-[50%] -translate-y-[50%] right-0 border text-secondary hover:text-white border-secondary hover:border-primary h-10 w-10 flex items-center justify-center bg-gray-800 hover:bg-primary/[.8] rounded-full transition-all ease-in-out duration-300"
             onClick={onClick}
         >
             <IoIosArrowBack className='transform rotate-180' />
@@ -75,9 +75,11 @@ const Testimonial = ({ title }) => {
         <ContainerSection>
             <SectionHeader title={title} />
             <div className='relative mt-10'>
-                <CustomLeftArrow onClick={() => carouselRef.current.previous()} />
-                <CustomRightArrow onClick={() => carouselRef.current.next()} />
-                <div className='px-10'>
+                <div className='hidden lg:block'>
+                    <CustomLeftArrow onClick={() => carouselRef.current.previous()} />
+                    <CustomRightArrow onClick={() => carouselRef.current.next()} />
+                </div>
+                <div className='lg:px-10'>
                     <Carousel
                         ref={carouselRef}
                         responsive={responsive}
@@ -91,12 +93,12 @@ const Testimonial = ({ title }) => {
                         customRightArrow={<CustomRightArrow />}
                     >
                         {slides.map((item, index) => (
-                            <div key={index} className="h-52 testimonial p-6 pr-12 flex gap-10">
-                                <img src={item.image} alt={`Slide ${index + 1}`} className="aspect-square h-full rounded-full object-cover" />
+                            <div key={index} className="h-auto lg:h-52 testimonial p-6 pb-12 lg:pb-6 lg:pr-12 flex flex-col lg:flex-row gap-10">
+                                <img src={item.image} alt={`Slide ${index + 1}`} className="aspect-square w-full lg:w-auto lg:h-full rounded-full object-cover" />
                                 <div>
-                                    <p className='text-gray text-sm'>{item.review}</p>
+                                    <p className='text-gray text-medium lg:text-sm'>{item.review}</p>
                                     <div className='h-[1px] border-b border-gray/[.5] w-full my-4'></div>
-                                    <div className='flex items-center justify-between'>
+                                    <div className='flex flex-col lg:flex-row items-center justify-between'>
                                         <div>
                                             <p className='font-semibold text-black'>{item.name}</p>
                                             <p><span className='text-[.80rem]'>{item.title}</span> | <span className='text-[.80rem]'>{item.location}</span></p>
@@ -107,6 +109,10 @@ const Testimonial = ({ title }) => {
                             </div>
                         ))}
                     </Carousel>
+                    <div className='lg:hidden flex items-center justify-center mt-10 gap-4'>
+                        <CustomLeftArrow onClick={() => carouselRef.current.previous()} />
+                        <CustomRightArrow onClick={() => carouselRef.current.next()} />
+                    </div>
                 </div>
             </div>
         </ContainerSection>
