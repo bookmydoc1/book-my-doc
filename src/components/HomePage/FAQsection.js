@@ -9,7 +9,7 @@ const FAQsection = ({ title }) => {
                 <SectionHeader title={title} />
             </ContainerSection>
         </div>
-    );
+    ); 
 }
 
 export default FAQsection;
