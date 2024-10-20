@@ -17,56 +17,56 @@ const SoftwareSection = ({ title, description }) => {
             icon: '/icons/telemedicine.svg',
             image: '/images/app-section/telemedicine.png',
             title: 'Telemedicine',
-            desc: 'Expand your practice beyond physical boundaries, and offer online consultation services to your patients.'
+            desc: 'Broaden your practice beyond physical limits by providing online consultation services to your patients.'
         },
         {
             id: 2,
             icon: '/icons/ehr.svg',
             image: '/images/app-section/ehr.png',
             title: 'EHR & EMR',
-            desc: 'Expand your practice beyond physical boundaries, and offer online consultation services to your patients.'
+            desc: 'EHR and EMR systems will efficiently organise patient records, making them easily accessible without the challenges of maintaining physical documentation. With BookMyDoc, you can access any patient’s records within seconds, streamlining your workflow and enhancing patient care.'
         },
         {
             id: 3,
             icon: '/icons/calender.svg',
             image: '/images/app-section/calender.png',
             title: 'Appointment Calendar',
-            desc: 'Reviews build trust and reputation among patients. Get reviews from your patients, manage and respond directly from the app.'
+            desc: 'The built-in appointment calendar will help you manage your schedule and enable you to add offline appointments, ensuring a more organised and productive workday.'
         },
         {
             id: 4,
             icon: '/icons/reviews.svg',
             image: '/images/app-section/reviews.png',
             title: 'Patient Reviews',
-            desc: 'Reviews build trust and reputation among patients. Get reviews from your patients, manage and respond directly from the app.'
+            desc: 'Reviews foster trust and enhance your reputation among patients. Collect feedback from your patients and manage responses directly through our app.'
         },
         {
             id: 5,
             icon: '/icons/management.svg',
             image: '/images/app-section/management.png',
             title: 'Patient Management',
-            desc: 'Reviews build trust and reputation among patients. Get reviews from your patients, manage and respond directly from the app.'
+            desc: 'The integrated patient management system tracks previous prescriptions you’ve issued, along with any test reports uploaded by the patient, making patient care simpler and more efficient.'
         },
         {
             id: 6,
             icon: '/icons/gateway.svg',
             image: '/images/app-section/gateway.png',
             title: 'Payment Gateway',
-            desc: 'Reviews build trust and reputation among patients. Get reviews from your patients, manage and respond directly from the app.'
+            desc: 'The integrated payment gateway allows easily managed finances. '
         },
         {
             id: 7,
             icon: '/icons/portal.svg',
             image: '/images/app-section/portal.png',
             title: 'Admin Portal',
-            desc: 'Reviews build trust and reputation among patients. Get reviews from your patients, manage and respond directly from the app.'
+            desc: 'The admin portal centralises all administrative tasks into a single dashboard, eliminating the need to switch between different tasks. The built-in customizable checklist feature ensures that no administrative duties are overlooked at the end of each business day.'
         },
         {
             id: 8,
             icon: '/icons/growth.svg',
             image: '/images/app-section/growth.png',
             title: 'Practice Growth',
-            desc: 'Reviews build trust and reputation among patients. Get reviews from your patients, manage and respond directly from the app.'
+            desc: 'Your Google My Business account, combined with our social media team, enhances your reach in both online and offline spheres, resulting in a positive impact on your practice.'
         },
     ]
     return (

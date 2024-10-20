@@ -17,7 +17,7 @@ export default function Home() {
         <WhyChooseUs title='Why choose Book My Doc for your clinic management?' description="In today's digital healthcare era, rely on us to support your successful clinic. Book My Doc is like having additional staff without the extra monthly expenses." />
       </div>
       <div className='mt-16'>
-        <SoftwareSection title='Our app is your clinic management software' description='The app provides a complete set of features for seamless clinic management. From telemedicine to patient management and online prescriptions, it covers all your clinic needs.' />
+        <SoftwareSection title='Our app as your clinic management solution' description="Our app offers a comprehensive set of features for effortless clinic management. From telemedicine to patient management and online prescriptions, it addresses all your clinic’s needs." />
       </div>
       <div className='mt-16'>
         <EmpoweringSection title='Empowering healthcare providers to deliver exceptional care and create an unmatched patient experience' description='The primary goal of healthcare is not only to cure but to foster comprehensive healing. This goes beyond treating physical ailments, encompassing every meaningful interaction between doctors and patients—both tangible and intangible.' />

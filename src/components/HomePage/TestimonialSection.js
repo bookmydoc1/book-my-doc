@@ -29,26 +29,26 @@ const Testimonial = ({ title }) => {
     const slides = [
         {
             image: '/images/video-section/image1.png',
-            review: "Highly recommend icareheal for clinic appointments software and website development. The team has been very prompt and helpful over the past year and am especially happy with the follow-up of appointments booked through the website. Their App is a one-stop solution for all patient and clinic-related information. Hoping for a fruitful association in the coming year as well.",
-            name: "Dr. Manni Hingorani",
-            title: "ENT Surgeon",
+            review: "Having extensive telemedicine experience, I can say with command that BookMyDoc stands apart in offering practice growth platform for the doctors that enables them in managing their clinic, their practice and their patient care throughout various touch-points both online and offline.",
+            name: "Dr. Haleema Yezdani",
+            title: "Global future 50 clinical leader in HIMSS",
             location: "South Delhi",
             stars: 5,
         },
         {
             image: '/images/video-section/image2.png',
-            review: 'Highly recommend icareheal for clinic appointments software and website development. The team has been very prompt and helpful over the past year and am especially happy with the follow-up of appointments booked through the website. Their App is a one-stop solution for all patient and clinic-related information. Hoping for a fruitful association in the coming year as well.',
+            review: 'Highly recommend BookMyDoc for clinic appointments software and website development. The team has been very prompt and helpful over the past year and am especially happy with the follow-up of appointments booked through the website. Their App is a one-stop solution for all patient and clinic-related information. Hoping for a fruitful association in the coming year as well.',
             name: "Dr. Manni Hingorani",
-            title: "Heart Surgeon",
-            location: "Dwarka",
+            title: "ENT Surgeon",
+            location: "South Delhi",
             stars: 4,
         },
         {
             image: '/images/video-section/image1.png',
-            review: 'Highly recommend icareheal for clinic appointments software and website development. The team has been very prompt and helpful over the past year and am especially happy with the follow-up of appointments booked through the website. Their App is a one-stop solution for all patient and clinic-related information. Hoping for a fruitful association in the coming year as well.',
-            name: "Dr. Manni Hingorani",
-            title: "ENT Surgeon",
-            location: "Gurugram",
+            review: 'Extremely satisfied with my association with BookMyDoc. Especially happy with the way they have engaged patients on my Google profile facilitating easy reach for diabetes patients to my practice. They started social media posts basis my recommendation. I receive 4-5 posts every week which I post on my social media, and getting attractions from there as well. Kudos to the great team. Would highly recommend BookMyDoc to fellow doctors, looking to grow their practice.',
+            name: "Dr. Anuradha Kapoor",
+            title: "Dr A Kapoor's Diabetes Control Clinic",
+            location: "Mumbai",
             stars: 5,
         }
     ];

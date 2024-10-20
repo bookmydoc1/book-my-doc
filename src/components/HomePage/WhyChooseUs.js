@@ -7,19 +7,19 @@ const WhyChooseUs = ({ title, description }) => {
     const cardData = [
         {
             heading: 'Enhance Patient Experience',
-            desc: 'Enhance patient satisfaction with Book My Doc. Online scheduling, automated reminders, and teleconsultations foster trust and encourage patient loyalty.'
+            desc: 'Boost patient satisfaction with Book My Doc. Our online scheduling, automated reminders, and teleconsultations build trust and foster patient loyalty.'
         },
         {
-            heading: 'Better Patient Care Delivery',
-            desc: "Empower your practice with Book My Doc’s cloud-based EHR, clinical tools, and online prescription system to deliver better patient care, giving you more time to focus on what truly matters—your patients' health."
-        },
-        {
-            heading: 'Automate Your Practice',
-            desc: 'Streamline your practice with Book My Doc’s clinic management app. Providers reduce workload, while patients enjoy increased convenience and ease. Everyone wins!'
+            heading: 'Improved Patient Care Delivery',
+            desc: "Enhance your practice with Book My Doc’s cloud-based EHR, clinical tools, and online prescription system. This enables you to provide superior patient care while giving you more time to focus on what truly matters—your patients' health."
         },
         {
             heading: 'Automate Your Practice',
-            desc: 'Streamline your practice with Book My Doc’s clinic management app. Providers reduce workload, while patients enjoy increased convenience and ease. Everyone wins!'
+            desc: 'Simplify your practice with Book My Doc’s clinic management app. Providers can lighten their workload, while patients benefit from greater convenience and ease. It’s a win-win for everyone!'
+        },
+        {
+            heading: 'EHR and EMR',
+            desc: "With Book My Doc's integrated EHR and EMR features, all your patient care documents are stored in one place, making them easily accessible and saving you a significant amount of time."
         },
     ]
     return (
