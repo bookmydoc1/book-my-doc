@@ -8,20 +8,24 @@ const FAQsection = ({ title }) => {
 
     const Faqs = [
         {
-            title: "What is the purpose of this website?",
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nulla ut sit quo adipisci! Facere molestias dignissimos tenetur mollitia consequatur, explicabo perferendis vitae dolorum provident ipsam labore itaque sapiente laboriosam!"
+            title: "Does BookMyDoc offer a website for doctors?",
+            content: "BookMyDoc understands the unique needs of doctors in India, and offers tailor-made websites to cater to those needs. These websites are designed to be mobile-responsive, SEO-friendly, and make it convenient for patients to book appointments directly from the website."
         },
         {
-            title: "What is the purpose of this website?",
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nulla ut sit quo adipisci! Facere molestias dignissimos tenetur mollitia consequatur, explicabo perferendis vitae dolorum provident ipsam labore itaque sapiente laboriosam!"
+            title: "How does the telehealth feature work?",
+            content: "Doctors can conduct virtual consultations through secure video calls, and issue digital prescriptions to patients."
         },
         {
-            title: "What is the purpose of this website?",
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nulla ut sit quo adipisci! Facere molestias dignissimos tenetur mollitia consequatur, explicabo perferendis vitae dolorum provident ipsam labore itaque sapiente laboriosam!"
+            title: "Can patients access their medical records?",
+            content: "a. Yes, patients can securely access their medical records after each consultation, ensuring transparency and continuity in care."
         },
         {
-            title: "What is the purpose of this website?",
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nulla ut sit quo adipisci! Facere molestias dignissimos tenetur mollitia consequatur, explicabo perferendis vitae dolorum provident ipsam labore itaque sapiente laboriosam!"
+            title: "Can I manage my profile from anywhere?",
+            content: "Yes, you can access and manage your profile, appointments, and patient data from any device with an internet connection."
+        },
+        {
+            title: "Is patient information secure on BookMyDoc?",
+            content: " Absolutely. BookMyDoc uses encrypted data storage and complies with all medical privacy regulations to ensure data security."
         },
     ]
 
