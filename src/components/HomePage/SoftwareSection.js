@@ -16,7 +16,7 @@ const SoftwareSection = ({ title, description }) => {
             id: 1,
             icon: '/icons/telemedicine.svg',
             image: '/images/app-section/telemedicine.png',
-            title: 'Telemedicine',
+            title: 'Telemedicine Update',
             desc: 'Expand your practice beyond physical boundaries, and offer online consultation services to your patients.'
         },
         {
