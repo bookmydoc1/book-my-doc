@@ -76,7 +76,7 @@ const SoftwareSection = ({ title, description }) => {
                 {features.map((feature, index) => (
                     <div key={index} onClick={() => setActiveFeature(feature)} className='text-center cursor-pointer border md:border-none border-primary/[.2] rounded-lg py-4 md:py-0'>
                         <img className='h-11 m-auto' key={index} src={feature.icon} alt={feature.title} />
-                        <h3 className={`${activeFeature === index ? 'text-secondary font-semibold' : 'text-gray font-medium'} text-xs whitespace-nowrap mt-1`}>{feature.title}</h3>
+                        <h3 className={`${activeFeature?.id === feature?.id ? 'text-secondary font-semibold' : 'text-gray font-medium'} text-xs whitespace-nowrap mt-1`}>{feature.title}</h3>
                     </div>
                 ))}
             </div>
