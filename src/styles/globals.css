@@ -95,3 +95,7 @@ body {
 .faq-section {
   background: linear-gradient(110.21deg, #89D3EB 1.11%, #2F87A4 45.11%);
 }
+
+.accordian-shadow {
+  box-shadow: 0px 4px 16px 0px #0919260A;
+}

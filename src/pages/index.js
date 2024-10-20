@@ -37,7 +37,7 @@ export default function Home() {
       <div className='mt-16'>
         <SubscriptionSection title='Comprehensive subscription for healthcare practice.' />
       </div>
-      <div className='my-16'>
+      <div className='mt-16'>
         <FAQsection title={'Frequently asked questions'} />
       </div>
     </>

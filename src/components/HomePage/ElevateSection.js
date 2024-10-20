@@ -1,6 +1,6 @@
 import ContainerSection from '@/utils/ContainerSection';
 import React, { useRef } from 'react';
-import SectionHeader from '../section-header';
+import SectionHeader from '../SectionHeader';
 import Carousel from 'react-multi-carousel';
 import { IoIosArrowBack } from 'react-icons/io';
 

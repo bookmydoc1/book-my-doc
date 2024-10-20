@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionHeader from '../section-header';
+import SectionHeader from '../SectionHeader';
 import ContainerSection from '@/utils/ContainerSection';
 import Button from '../Button';
 

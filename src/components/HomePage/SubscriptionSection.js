@@ -1,6 +1,6 @@
 import ContainerSection from '@/utils/ContainerSection';
 import React from 'react';
-import SectionHeader from '../section-header';
+import SectionHeader from '../SectionHeader';
 
 const SubscriptionSection = ({ title }) => {
   const plan1 = {
@@ -38,7 +38,7 @@ const SubscriptionSection = ({ title }) => {
             plan1.features.map((feature, index) => (
               <div>
                 <p className='text-sm md:text-base'>{feature}</p>
-                <div className={`flex items-center gap-10 px-8 md:px-12 my-4 ${plan1.features.length === index+1 && 'hidden'}`}>
+                <div className={`flex items-center gap-10 px-8 md:px-12 my-4 ${plan1.features.length === index + 1 && 'hidden'}`}>
                   <div className='h-3 w-3 border-2 border-primary/[.1]'></div>
                   <div className='h-0 w-full border border-primary/[.1]'></div>
                   <div className='h-3 w-3 border-2 border-primary/[.1]'></div>
@@ -57,7 +57,7 @@ const SubscriptionSection = ({ title }) => {
             plan2.features.map((feature, index) => (
               <div>
                 <p className='text-sm md:text-base'>{feature}</p>
-                <div className={`flex items-center gap-10 px-8 md:px-12 my-4 ${plan1.features.length === index+1 && 'hidden'}`}>
+                <div className={`flex items-center gap-10 px-8 md:px-12 my-4 ${plan1.features.length === index + 1 && 'hidden'}`}>
                   <div className='h-3 w-3 border-2 border-primary/[.1]'></div>
                   <div className='h-0 w-full border border-primary/[.1]'></div>
                   <div className='h-3 w-3 border-2 border-primary/[.1]'></div>

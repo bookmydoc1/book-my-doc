@@ -1,4 +1,4 @@
-import SectionHeader from '../section-header';
+import SectionHeader from '../SectionHeader';
 import React, { useEffect, useRef, useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
