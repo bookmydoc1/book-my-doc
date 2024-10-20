@@ -11,6 +11,7 @@ import Portal from '@/utils/Portal';
 
 const VideoCarousel = ({ title, description }) => {
     const carouselRef = useRef();
+    console.log('carouselRef', carouselRef);
     const playerRef = useRef(null);
     const [isOpen, setIsOpen] = useState(false);
     const [videoUrl, setVideoUrl] = useState('');
@@ -102,10 +103,7 @@ const VideoCarousel = ({ title, description }) => {
                         customTransition="transform 300ms ease-in-out"
                         containerClass="carousel-container-no-padding"
                         itemClass="px-4"
-                        renderButtonGroupOutside={true}
                         infinite
-                        customLeftArrow={<CustomLeftArrow />}
-                        customRightArrow={<CustomRightArrow />}
                     >
                         {slides.map((item, index) => (
                             <div key={index} className="relative overflow-hidden h-full rounded-lg">

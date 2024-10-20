@@ -25,6 +25,9 @@ export default function App({ Component, pageProps }) {
   return (
     <NextUIProvider>
       <Head>
+        <link rel="shortcut icon" href="/images/logo-only.svg" type="image/png" />
+        <link rel="favicon" href="/images/logo-only.svg" type="image/png" />
+        <link rel="icon" href="/images/logo-only.svg" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />

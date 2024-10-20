@@ -44,6 +44,9 @@ body {
   @apply h-full md:h-[calc(100vh-4rem)];
   background: var(--blue-grdient, linear-gradient(110deg, #89D3EB 1.11%, #2F87A4 45.11%));
 }
+.banner-gradient {
+  background: linear-gradient(110deg, #2F87A4 1.11%, #70b4ca 45.11%);
+}
 
 .banner-bold-text-bg {
   background: linear-gradient(356deg, #51BF68 -13.54%, rgba(81, 191, 104, 0.00) 68.11%);
@@ -98,4 +101,11 @@ body {
 
 .accordian-shadow {
   box-shadow: 0px 4px 16px 0px #0919260A;
+}
+
+.footer-contact-links{
+  @apply bg-primary rounded-full p-2
+}
+.footer-contact-links .link{
+  @apply text-white font-bold
 }

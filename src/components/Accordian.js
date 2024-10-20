@@ -23,14 +23,14 @@ const Accordion = ({ items }) => {
   return (
     <div className="space-y-5">
       {items.map((item, index) => (
-        <div key={index} className={`rounded-xl ${openIndex === index ? 'bg-white' : 'bg-[#EFF5F7]'} accordian-shadow`}>
+        <div key={index} className={`rounded-xl ${openIndex === index ? 'bg-white' : 'bg-[#EFF5F7]'} accordian-shadow transition-all ease-out duration-500`}>
           <div
             className={`flex justify-between items-center p-4 ${openIndex === index ? 'pb-3' : ''} cursor-pointer`}
             onClick={() => handleToggle(index)}
           >
             <h3 className="text-lg font-semibold">{item.title}</h3>
             <svg
-              className={`w-6 h-6 transform transition-transform duration-300 ${
+              className={`w-6 h-6 transform transition-transform duration-500 ${
                 openIndex === index ? 'rotate-180' : 'rotate-0'
               }`}
               fill="none"

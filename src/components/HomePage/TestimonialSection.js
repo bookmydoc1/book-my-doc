@@ -74,7 +74,7 @@ const Testimonial = ({ title }) => {
     return (
         <ContainerSection>
             <SectionHeader title={title} />
-            <div className='relative mt-10'>
+            <div className='relative mt-6'>
                 <div className='hidden lg:block'>
                     <CustomLeftArrow onClick={() => carouselRef.current.previous()} />
                     <CustomRightArrow onClick={() => carouselRef.current.next()} />
@@ -85,12 +85,9 @@ const Testimonial = ({ title }) => {
                         responsive={responsive}
                         arrows={false}
                         customTransition="transform 300ms ease-in-out"
-                        containerClass="carousel-container-no-padding"
-                        itemClass="px-4"
-                        renderButtonGroupOutside={true}
+                        containerClass=""
+                        itemClass="p-4"
                         infinite
-                        customLeftArrow={<CustomLeftArrow />}
-                        customRightArrow={<CustomRightArrow />}
                     >
                         {slides.map((item, index) => (
                             <div key={index} className="h-auto lg:h-52 testimonial p-6 pb-12 lg:pb-6 lg:pr-12 flex flex-col lg:flex-row gap-10">
