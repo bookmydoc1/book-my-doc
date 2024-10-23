@@ -43,7 +43,7 @@ const Footer = () => {
                         <div className='text-primary flex flex-wrap gap-y-3 border-b border-primary/[.2] pb-4'>
                             {
                                 footerLinks.map((link, index) => (
-                                    <div className='flex items-center'>
+                                    <div key={index} className='flex items-center'>
                                         <div className='text-sm whitespace-nowrap'>
                                             <Link href={link.href}>
                                                 {link.title}

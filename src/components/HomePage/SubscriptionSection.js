@@ -34,7 +34,7 @@ const SubscriptionSection = ({ title }) => {
           <h3 className='text-xl md:text-2xl my-4 font-medium'>{plan1.name}</h3>
           {
             plan1.features.map((feature, index) => (
-              <div>
+              <div key={index}>
                 <p className='text-sm md:text-base'>{feature}</p>
                 <div className={`flex items-center gap-10 px-8 md:px-12 my-4 ${plan1.features.length === index + 1 && 'hidden'}`}>
                   <div className='h-3 w-3 border-2 border-primary/[.1]'></div>
@@ -53,7 +53,7 @@ const SubscriptionSection = ({ title }) => {
           <h3 className='text-xl md:text-2xl my-4 font-medium'>{plan2.name}</h3>
           {
             plan2.features.map((feature, index) => (
-              <div>
+              <div key={index}>
                 <p className='text-sm md:text-base'>{feature}</p>
                 <div className={`flex items-center gap-10 px-8 md:px-12 my-4 ${plan1.features.length === index + 1 && 'hidden'}`}>
                   <div className='h-3 w-3 border-2 border-primary/[.1]'></div>

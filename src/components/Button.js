@@ -1,4 +1,6 @@
 import React from 'react';
+import FormPopup from './FormPopup';
+import { useDisclosure } from '@nextui-org/modal';
 
 const Button = ({
   children,
@@ -11,6 +13,8 @@ const Button = ({
   className = '',
   form
 }) => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   const baseStyles = `font-medium focus:outline-none rounded-full relative overflow-hidden w-max
     before:absolute before:top-0 before:left-full before:w-full before:h-full
     hover:before:left-0 before:transition-all before:duration-1000 before:ease-in-out
@@ -38,16 +42,19 @@ const Button = ({
   `;
 
   return (
-    <button
-      form={form}
-      title={title}
-      className={classes}
-      onClick={onClick}
-      type={type}
-      disabled={disabled}
-    >
-      <span className="relative z-10">{children}</span>
-    </button>
+    <>
+      <FormPopup isOpen={isOpen} onOpen={onOpen} onOpenChange={onOpenChange} />
+      <button
+        form={form}
+        title={title}
+        className={classes}
+        onClick={onClick || onOpen}
+        type={type}
+        disabled={disabled}
+      >
+        <span className="relative z-10">{children}</span>
+      </button>
+    </>
   );
 };
 

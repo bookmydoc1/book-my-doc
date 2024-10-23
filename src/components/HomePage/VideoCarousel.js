@@ -11,7 +11,6 @@ import Portal from '@/utils/Portal';
 
 const VideoCarousel = ({ title, description }) => {
     const carouselRef = useRef();
-    console.log('carouselRef', carouselRef);
     const playerRef = useRef(null);
     const [isOpen, setIsOpen] = useState(false);
     const [videoUrl, setVideoUrl] = useState('');

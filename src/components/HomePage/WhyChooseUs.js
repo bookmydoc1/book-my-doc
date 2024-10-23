@@ -33,7 +33,7 @@ const WhyChooseUs = ({ title, description }) => {
                     <div className='flex w-full flex-col gap-3 px-4 max-h-[85vh] overflow-y-auto scrollbar-hide'>
                         {
                             cardData.map((item, index) => (
-                                <div className='bg-blue-50 p-6 rounded relative'>
+                                <div key={index} className='bg-blue-50 p-6 rounded relative'>
                                     <h3 className='font-medium text-2xl mb-3'>{item.heading}</h3>
                                     <p className='text-gray text-sm'>{item.desc}</p>
                                     <div className='absolute right-0 bottom-0 translate-x-[50%] translate-y-[50%] h-14 w-14 rounded-full bg-white'></div>

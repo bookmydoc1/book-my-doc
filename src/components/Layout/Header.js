@@ -3,7 +3,6 @@ import React from 'react';
 import Button from '../Button';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import FormPopup from '../FormPopup';
 
 const Header = () => {
     const router = useRouter();
@@ -28,7 +27,6 @@ const Header = () => {
     ]
     return (
         <div className='flex items-center py-3 sticky top-0 w-full z-10 !bg-white'>
-            <FormPopup />
             <ContainerSection>
                 <div className='flex items-center justify-between'>
                     <Link href="/">
