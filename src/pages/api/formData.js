@@ -2,6 +2,7 @@ import dbConnect from '../../../lib/mongodb';
 import FormData from '../../../lib/models/FormData';
 
 export default async function handler(req, res) {
+  console.log('req.method', req.method);
   if (req.method !== 'POST') {
     res.status(405).json({ message: 'Method Not Allowed' });
     return;
