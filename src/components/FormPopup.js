@@ -8,11 +8,28 @@ export default function FormPopup({ isOpen, onOpen, onOpenChange }) {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     }
     const handleSubmit = async () => {
-        if (!formData?.doctor_name || !formData?.clinic_name || !formData?.mobile_number || !formData?.email) {
+        if (!formData?.doctorName || !formData?.clinicName || !formData?.mobileNumber || !formData?.email) {
             alert('Please fill all the required fields');
             return;
         }
-        console.log('formData', formData);
+        try {
+            const response = await fetch('/api/formData', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                onOpenChange(false)
+                alert('Form Submitted Successfully')
+            } else {
+                alert(result.error || 'An error occurred');
+            }
+        } catch (error) {
+
+        }
     }
     useEffect(() => {
         setFormData({ type: 'single' })
@@ -66,26 +83,26 @@ export default function FormPopup({ isOpen, onOpen, onOpenChange }) {
                                         <div className="relative border border-[#DCF2E1] mt-5 rounded-full">
                                             <label className="absolute top-0 left-4 w-max bg-white text-sm -translate-y-[50%] font-bold px-1">Doctor name*</label>
                                             <div className="p-3 pl-5">
-                                                <input name='doctor_name' onChange={handleChange} placeholder="Type here..." className="w-full focus:ring-0 focus:outline-none text-[16px]" type="text" />
+                                                <input name='doctorName' value={formData?.doctorName} onChange={handleChange} placeholder="Type here..." className="w-full focus:ring-0 focus:outline-none text-[16px]" type="text" />
                                             </div>
                                         </div>
                                         <div className="relative border border-[#DCF2E1] mt-5 rounded-full">
                                             <label className="absolute top-0 left-4 w-max bg-white text-sm -translate-y-[50%] font-bold px-1">Clinic name*</label>
                                             <div className="p-3 pl-5">
-                                                <input name='clinic_name' onChange={handleChange} placeholder="Type here..." className="w-full focus:ring-0 focus:outline-none text-[16px]" type="text" />
+                                                <input name='clinicName' value={formData?.clinicName} onChange={handleChange} placeholder="Type here..." className="w-full focus:ring-0 focus:outline-none text-[16px]" type="text" />
                                             </div>
                                         </div>
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-3">
                                             <div className="relative border border-[#DCF2E1] mt-5 rounded-full">
                                                 <label className="absolute top-0 left-4 w-max bg-white text-sm -translate-y-[50%] font-bold px-1">Mobile Number*</label>
                                                 <div className="p-3 pl-5">
-                                                    <input name='mobile_number' onChange={handleChange} placeholder="Type here..." className="w-full focus:ring-0 focus:outline-none text-[16px]" type="number" max={999999999} />
+                                                    <input name='mobileNumber' value={formData?.mobileNumber} onChange={handleChange} placeholder="Type here..." className="w-full focus:ring-0 focus:outline-none text-[16px]" type="number" max={999999999} />
                                                 </div>
                                             </div>
                                             <div className="relative border border-[#DCF2E1] mt-5 rounded-full">
                                                 <label className="absolute top-0 left-4 w-max bg-white text-sm -translate-y-[50%] font-bold px-1">Email ID*</label>
                                                 <div className="p-3 pl-5">
-                                                    <input name='email' onChange={handleChange} placeholder="Type here..." className="w-full focus:ring-0 focus:outline-none text-[16px]" type="text" />
+                                                    <input name='email' value={formData?.email} onChange={handleChange} placeholder="Type here..." className="w-full focus:ring-0 focus:outline-none text-[16px]" type="text" />
                                                 </div>
                                             </div>
                                         </div>
