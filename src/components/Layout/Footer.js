@@ -62,7 +62,7 @@ const Footer = () => {
                                 <div className='footer-contact-links'>
                                     <LuPhone className='link' />
                                 </div>
-                                <p className='text-xs'>+91-9654426129</p>
+                                <p className='text-xs'>0595-2970546</p>
                             </a>
                             <a href="mailto:info@bookmydoc.com" className='flex items-center gap-1'>
                                 <div className='footer-contact-links'>
@@ -74,7 +74,7 @@ const Footer = () => {
                                 <div className='footer-contact-links'>
                                     <GrLocation className='link' />
                                 </div>
-                                <p className='text-xs'>1234 Healthcare Lane, Suite 100, MedCity, CA 90001, USA.</p>
+                                <p className='text-xs'>Suraj Park, Samaypur Badli, New Delhi, India</p>
                             </div>
                         </div>
                     </div>

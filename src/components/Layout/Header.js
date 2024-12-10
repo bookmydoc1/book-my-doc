@@ -18,7 +18,7 @@ const Header = () => {
         },
         {
             "title": "Privacy Policy",
-            "path": "#",
+            "path": "/privacy-policy",
         },
         {
             "title": "Contact Us",
